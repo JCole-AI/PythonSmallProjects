@@ -1,0 +1,25 @@
+
+#this program searchs file directories and prints a list of 
+def main():
+    
+    
+    #this informs the user on how to search the program
+    print("Hello and welcome! This program is to search for documents in a file path")
+    print("Please enter the document information you wish to search for you can use * to shorten your search!")
+    
+    #this imports the glob and os library
+    import glob, os
+    os.chdir(r"INSERT FILE PATHWAY HERE")
+    
+    #this allows the user to search the file directory 
+    for file in glob.glob(input("")):
+
+
+        print(file)
+#this loops allows the user to decide if they want to search again with a yes or no
+while True:
+    main()
+    if input("Repeat the search? (Y/N)").strip().upper() != 'Y':
+        break
+
+main()
