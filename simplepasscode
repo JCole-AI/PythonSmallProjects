@@ -1,0 +1,10 @@
+# this is a simple passcode program designed to take a username and password
+
+print("Please enter your username:")
+username = input()
+print("Please enter your password:")
+passord = input()
+if username != "Joe Cool" and  passord == "Password":
+    print("Wrong username/passord")
+else:
+    print("Welcome to the program")
