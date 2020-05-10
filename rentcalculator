@@ -1,0 +1,9 @@
+print("Enter hours per week:")
+hoursweek = int(input())
+print("Enter hourly pay:")
+hourpay = int(input())
+weeklypay = (hoursweek * hourpay)
+if weeklypay > 400:
+    print("You can afford to live alone")
+elif weeklypay < 400:
+    print("You are unable to live alone")
